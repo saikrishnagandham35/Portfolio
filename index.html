@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sai Krishna - Developer Portfolio</title>
+    
+    <!-- Font and icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Css Linking -->
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+    <div class="background-glow"></div>
+
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav container">
+            <a href="#home" class="nav-logo">Portfolio</a>
+            <div class="nav-menu">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#education" class="nav-link">Education</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            <button class="hamburger-btn" aria-label="Open menu">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </nav>
+    </header>
+
+    <main class="container">
+        <!--  Home Section  -->
+        <section id="home" class="hero">
+            <div class="hero-text">
+                <h1>Hi, I'm <span class="text-gradient">Sai Krishna Gandham</span></h1>
+                <h2 class="subtitle hero-subtitle"><b>Python Developer</b></h2>
+                <p>I’m interested in software development and love learning and building new things.</p>
+            </div>
+            <div class="hero-image-box" tabindex="0">
+                <img src="image.jpg" alt="Sai Krishna" class="hero-image">
+            </div>
+        </section>
+
+        <!--  About Me Section -->
+        <section id="about" class="animated-section">
+            <h2 class="title">About Me</h2>
+            <div class="title-underline"></div>
+            <p class="about-text">
+                I’m a final year B.Tech student with a strong interest in becoming a software engineer. I enjoy solving problems through technology and building solutions that are efficient, user-friendly, and impactful. With a hands-on learning approach and a passion for continuous growth, I’m eager to contribute to real-world projects and evolve as a professional in the tech industry.
+            </p>
+            <div class="info-grid">
+                <div class="info-card">
+                    <i class="fa-solid fa-lightbulb"></i>
+                    <span>Problem Solver</span>
+                </div>
+                <div class="info-card">
+                    <i class="fa-solid fa-palette"></i>
+                    <span>Creative Thinker</span>
+                </div>
+                <div class="info-card">
+                    <i class="fa-solid fa-users"></i>
+                    <span>Team Player</span>
+                </div>
+                <div class="info-card">
+                    <i class="fa-solid fa-book-open"></i>
+                    <span>Positive Learner</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education" class="animated-section">
+            <h2 class="title">Education</h2>
+            <div class="title-underline"></div>
+            <div class="education-grid">
+                <!--Education-1-->
+                <div class="education-card">
+                    <h3><i class="fa-solid fa-graduation-cap"></i> Diploma in Computer Engineering</h3>
+                    <p class="university-details">Kakinada Institute of Engineering & Technology | 2020 - 2023</p>
+                    <p class="coursework">Completed a comprehensive diploma program focusing on the fundamentals of computer engineering.</p>
+                </div>
+                <!--Education-2-->
+                <div class="education-card">
+                    <h3><i class="fa-solid fa-graduation-cap"></i> Bachelor of Technology (CSE)</h3>
+                    <p class="university-details">Ideal Institute of Technology | 2023 - 2026</p>
+                    <p class="coursework">Pursuing a Bachelor's degree with a specialization in Artificial Intelligence and Machine Learning.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="animated-section">
+            <h2 class="title">Skills & Expertise</h2>
+            <div class="title-underline"></div>
+            <p class="subtitle">These are the technologies I’ve learned and practiced during my journey. I use them to build solutions, improve my skills, and explore new ideas through coding.</p>
+            <div class="skills-grid">
+                <div class="skill-card">Python</div>
+                <div class="skill-card">HTML5</div>
+                <div class="skill-card">CSS3</div>
+                <div class="skill-card">JavaScript</div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="animated-section">
+            <h2 class="title">My Projects</h2>
+            <div class="title-underline"></div>
+            <p class="subtitle">Here are some of the projects I’ve worked on during my learning. Each one helped me practice my skills and understand concepts better.</p>
+            <div class="projects-grid">
+
+                <!--Project-1-->
+                <div class="project-card">
+                    <div class="card-content">
+                        <h3>Hospital Appointment Booking</h3>
+                        <p>A simple Python project to book hospital appointments by assigning doctors based on disease type and generating appointment details.</p>
+                        <a href="https://github.com/saikrishnagandham35/Hospital-Appointment-Booking" target="_blank">View Code &rarr;</a>
+                    </div>
+                </div>
+
+                <!--Project-2-->
+                <div class="project-card">
+                    <div class="card-content">
+                        <h3>Food Ordering System</h3>
+                        <p>A collaborative coding platform where developers can create, share, and learn together through interactive challenges.</p>
+                        <a href="#" target="_blank">View Code &rarr;</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="animated-section">
+            <h2 class="title">Get In Touch</h2>
+            <div class="title-underline"></div>
+            <p class="subtitle">I'm always open to discussing new projects, creative ideas, or opportunities to be part of your visions. Feel free to reach out!</p>
+            
+            <!-- MODIFIED: Contact form with your Formspree link -->
+            <form action="https://formspree.io/f/xjkoaypv" method="POST" class="contact-form" id="contactForm">
+                <div class="form-group">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                </div>
+                <textarea name="message" placeholder="Your Message" rows="6" required></textarea>
+                <button type="submit" class="submit-btn">Send Message</button>
+                <div id="form-status" style="margin-top:16px; color:#ae54c4; font-weight:600;"></div>
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="social-links">
+            <a href="https://github.com/saikrishnagandham35" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/sai-krishna-gandham-95b9b7304/" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            <a href="https://www.instagram.com/developer_35_/?next=%2F" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        </div>
+        <p class="copyright">&copy; 2025 Sai Krishna. </p>
+        <p class="copyright">Thank you for exploring my journey <i class="fa-solid fa-heart"></i>.</p>
+    </footer>
+
+    <!-- Link to JS-->
+    <script src="index.js"></script>
+
+</body>
+</html>
